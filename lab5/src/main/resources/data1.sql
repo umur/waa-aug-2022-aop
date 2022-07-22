@@ -1,0 +1,17 @@
+INSERT INTO public.category (id, name) VALUES (1, 'test a');
+INSERT INTO public.category (id, name) VALUES (2, 'test b');
+INSERT INTO public.category (id, name) VALUES (3, 'wow');
+INSERT INTO public.category (id, name) VALUES (4, 'test a');
+INSERT INTO public.address (id, city, street, zip) VALUES (2, 'Iowa', '56th', 44106);
+INSERT INTO public.address (id, city, street, zip) VALUES (3, 'Ohio', '4th', 44016);
+INSERT INTO public.address (id, city, street, zip) VALUES (4, 'Cleveland', '12th', 78641);
+INSERT INTO public.address (id, city, street, zip) VALUES (1, 'Fairfield', 'N B', 55256);
+INSERT INTO public.product (id, name, price, rating, category_id) VALUES (2, 'trung', 200, 3.8, 2);
+INSERT INTO public.product (id, name, price, rating, category_id) VALUES (3, 'anh', 150, 2, 3);
+INSERT INTO public.product (id, name, price, rating, category_id) VALUES (14, 'test', 100, 4.9, 1);
+INSERT INTO public.review (id, comment, user_id) VALUES (2, 'test 2', 2);
+INSERT INTO public.review (id, comment, user_id) VALUES (3, 'test 3', 3);
+INSERT INTO public."user" (id, email, first_name, last_name, password, address_id) VALUES (2, 'b@gmail', 'Anh', 'Nguyen', '1', 2);
+INSERT INTO public."user" (id, email, first_name, last_name, password, address_id) VALUES (3, 'c@gmail', 'Tan', 'John', '2', 3);
+INSERT INTO public."user" (id, email, first_name, last_name, password, address_id) VALUES (4, 'd@gmail', 'David', 'Le', '3', 4);
+INSERT INTO public."user" (id, email, first_name, last_name, password, address_id) VALUES (13, 'd@gmail', 'David', 'Le', '3', 4);
