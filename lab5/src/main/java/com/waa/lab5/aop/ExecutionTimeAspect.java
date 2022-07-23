@@ -31,13 +31,11 @@ public class ExecutionTimeAspect {
                 proceedingJoinPoint.getSignature().getDeclaringTypeName(),
                 proceedingJoinPoint.getSignature().getName());
         logExecutionTime(methodName, executionTime);
-        System.out.println("getExecutionTime: " + Thread.currentThread().getName());
         return result;
     }
 
     @Async()
     public void logExecutionTime(String methodName, long executionTime){
-        System.out.println("logExecutionTime: " + Thread.currentThread().getName());
         ActivityLogDTO activityLogDTO = new ActivityLogDTO();
         activityLogDTO.setOperation(methodName);
         activityLogDTO.setDuration(executionTime);
