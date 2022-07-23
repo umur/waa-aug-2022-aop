@@ -1,0 +1,128 @@
+{
+	"id": "ebec3bc8-4d99-a683-df68-88750d5015a8",
+	"name": "Assigment5",
+	"description": "",
+	"order": [
+		"30f3f78c-6180-a767-a0dd-fa8f45c7123a",
+		"411aefe2-04a8-9cd0-cccc-5b2b269a2ad9",
+		"9c91a864-8423-815f-c2fe-e950b9ca508b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1658539892095,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "30f3f78c-6180-a767-a0dd-fa8f45c7123a",
+			"headers": "Content-Type: application/json\nHeader: AOP-IS-AWESOME\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Header",
+					"value": "AOP-IS-AWESOME",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ebec3bc8-4d99-a683-df68-88750d5015a8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "PostProductWithHeader",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1658539936181,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \n        \"name\": \"Short\",\n        \"price\": 50,\n        \"categoryId\": 1,\n        \"categoryName\": \"Women\"\n    }"
+		},
+		{
+			"id": "411aefe2-04a8-9cd0-cccc-5b2b269a2ad9",
+			"headers": "//Content-Type: application/json\n//Header: AOP-IS-AWESOME\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Header",
+					"value": "AOP-IS-AWESOME",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/api/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "ebec3bc8-4d99-a683-df68-88750d5015a8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "PostProductWithoutHeader",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1658539963366,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \n        \"name\": \"Short\",\n        \"price\": 50,\n        \"categoryId\": 1,\n        \"categoryName\": \"Women\"\n    }"
+		},
+		{
+			"id": "9c91a864-8423-815f-c2fe-e950b9ca508b",
+			"headers": "//Content-Type: application/json\n//Header: AOP-IS-AWESOME\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Header",
+					"value": "AOP-IS-AWESOME",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8080/api/product",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "ebec3bc8-4d99-a683-df68-88750d5015a8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "DisplayExecutableTime",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1658540051650,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \n        \"name\": \"Short\",\n        \"price\": 50,\n        \"categoryId\": 1,\n        \"categoryName\": \"Women\"\n    }"
+		}
+	]
+}
