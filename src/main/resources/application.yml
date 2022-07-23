@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: waa-aug-2022-aop
+  datasource:
+    url: jdbc:postgresql://localhost:5432/waa-aug-2022-lab5
+    password: qwer
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+    show-sql: true
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+server:
+  port: 8080
