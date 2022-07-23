@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Lab5-app
+  datasource:
+    username: postgres
+    password: example
+    url: jdbc:postgresql://localhost:5432/lab5
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+server:
+  port: 8080
